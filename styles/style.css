@@ -1,0 +1,337 @@
+body {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    width: 100vw;
+    background: #FFFFFF;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vw;
+    height: 2.2vw;
+}
+
+nav {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+}
+
+.header-link, a {
+    color: #000D40;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.language span {
+    font-size: 1.1vw;
+    color: #129AFE;
+}
+
+.outlined-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 3.3vw;
+    background: #FFFFFF;
+    border: 0.1vw solid #129AFE;
+    border-radius: 50vw;
+    font-size: 1.2vw;
+    color: #129AFE;
+    cursor: pointer;
+}
+
+h1 {
+    width: 100%;
+    font-size: 3.9vw;
+    text-align: center;
+    color: #000D40;
+    margin-top: 5vw;
+}
+
+.description {
+    width: 100%;
+    font-size: 1.6vw;
+    text-align: center;
+    color: #000D40;
+    margin-top: 1.5vw;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Push the element to the right */
+    margin-right: auto; /* Allow it to be centered */
+    width: 60vw;
+    border: 0.1vw solid #129AFE;
+    border-radius: 2vw;
+    position: relative;
+}
+
+.text-field {
+    flex-grow: 1;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 2vw 0 0 2vw;
+    font-size: 1.2vw;
+    outline: none;
+}
+
+button {
+    background-color: #129AFE;
+    color: white;
+    border: none;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.2vw;
+    border-radius: 0 2vw 2vw 0;
+    cursor: pointer;
+}
+
+.search-results {
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5vw;
+    position: absolute;
+    top: 100%; /* Position it right below the search container */
+    left: 0;         /* Center it horizontally */
+    transform: none; /* Adjust for the size of the element */
+    width: 60vw;
+    max-height: 18vw;
+    overflow-y: scroll;
+    background: #FFFFFF;
+    border: 0.1vw solid #E9EEF2;
+    box-shadow: 0px 0.3vw 1.1vw #F2F3F5;
+    border-radius: 0.5vw;
+}
+
+.menu-option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5vw 1vw;
+    background: #FFFFFF;
+    border-radius: 0.5vw;
+    font-size: 1.4vw;
+    color: #000D40;
+    cursor: pointer;
+}
+
+.menu-option:hover {
+    background: #f2f3f5;
+}
+
+.guide-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3vw;
+    width: 100%; /* Ensure the container takes the full width */
+}
+
+.card {
+    flex: 1 1 calc(30% - 2vw);  /* Decreased to take up 30% of the width minus twice the gap */
+    border: 0.1vw solid #E9EEF2;
+    padding: 1.5vw;
+    box-shadow: 0px 0.3vw 1.1vw #F2F3F5;
+    border-radius: 1vw;
+    margin: 1vw; /* This will create the gap between the cards */
+    height: auto;  /* Adjusted to make the card height dynamic */
+}
+
+.card button {
+    background-color: #129AFE;
+    border: none;
+    color: white;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+}
+
+h2 {
+    width: 100%;
+    font-size: 2.5vw;
+    text-align: center;
+    color: #000D40;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.faq-item {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1vw solid #E9EEF2;
+    padding: 1vw;
+    box-shadow: 0px 0.3vw 1.1vw #F2F3F5;
+    border-radius: 1vw;
+}
+
+.faq-item h3 {
+    font-size: 1.5vw;
+    color: #000D40;
+}
+
+.faq-item span {
+    font-size: 1.5vw;
+    color: #129AFE;
+}
+
+.blank-space {
+    height: 100px; /* Adjust as needed for the desired blank space */
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0A74B9; /* Darker blue color */
+}
+
+.footer-top {
+    text-align: center;
+    padding: 20px 0; /* Adjust as needed */
+    background-color: #fff; /* White background for the top section */
+}
+
+.footer-top::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height to control the curve */
+    background: #0A74B9; /* Darker blue color */
+    border-radius: 100% 100% 0 0;
+}
+
+.footer-image {
+    width: 100px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0; /* Adjust as needed */
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.footer-logo {
+    width: 100px; /* Adjust as needed */
+    display: block;
+    margin: 0 auto 20px; /* Adjust as needed */
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust as needed */
+}
+
+.features, .pages {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 10px); /* Adjusted width to account for the gap */
+}
+
+.pages {
+    margin-left: 10px; /* Gap between features and pages */
+}
+
+.footer-right input[type="email"] {
+    flex: 1; /* Allow the input to take up available space */
+    padding: 10px; /* Adjust as needed */
+    border: 1px solid #ccc; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    outline: none;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #0A74B9; /* Darker blue color */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Adjust as needed */
+    border-radius: 50px; /* Rounded from all sides */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #085a8d; /* Slightly darker blue for hover effect */
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .header-link, .language span, .outlined-btn {
+        font-size: 2vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .description {
+        font-size: 2.5vw;
+    }
+
+    .text-field {
+        font-size: 2vw;
+    }
+
+    .menu-option {
+        font-size: 2.5vw;
+    }
+}
+
